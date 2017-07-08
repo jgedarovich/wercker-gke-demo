@@ -9,8 +9,9 @@ build:
         name: Nose tests
         code: bin/tests
 
-    # Take our tested application revision and its dependencies, bake it in to a
-    # Docker image, and push to GCR.
+# Take our tested application revision and its dependencies, bake it in to a
+# Docker image, and push to GCR.
+deploy:
     - internal/docker-push:
         entrypoint: bin/get_ip
         cmd: 0.0.0.0 8080
