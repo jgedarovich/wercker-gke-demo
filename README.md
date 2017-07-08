@@ -19,3 +19,11 @@ optional arguments:
 
 Requires `Python 2` `pip` & `virtualenv` to run.
 
+
+# weird
+had to enable gcr and then run
+`gcloud docker push gcr.io/wrecker-demo2/get_ip:bdd20912f3a55422f4653c6f89cb143b0d59c410`
+before the kubernetes-deploy step (?) or part of pipeline would work, was
+previously getting errors about not being able to pull the image when looking
+at `kubectl get pods` and `kubectl describe pods`
+
