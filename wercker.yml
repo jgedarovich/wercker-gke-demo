@@ -15,8 +15,8 @@ build:
         entrypoint: bin/get_ip
         cmd: 0.0.0.0 8080
         working-dir: $WERCKER_ROOT
-        #tag: $WERCKER_GIT_COMMIT
-        tag: some-tag-yo
+        tag: $WERCKER_GIT_COMMIT
+        #tag: some-tag-yo
         ports: "8080"
         username: _json_key
         password: $GCR_JSON_KEY_FILE
