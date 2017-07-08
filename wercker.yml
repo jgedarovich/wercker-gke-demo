@@ -49,7 +49,7 @@ deploy-to-kubernetes:
     - riceo/kubectl:
         name: deploy to kubernetes
         server: $KUBERNETES_MASTER
-        gcloud-key-json: $GCP_KEY_JSON
+        gcloud-key-json: $GCR_JSON_KEY_FILE
         gke-cluster-name: $GKE_CLUSTER_NAME
         gke-cluster-zone: $GKE_CLUSTER_ZONE
         gke-cluster-project: $GKE_CLUSTER_PROJECT
