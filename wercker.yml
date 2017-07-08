@@ -20,7 +20,7 @@ build:
         ports: "8080"
         username: _json_key
         password: $GCR_JSON_KEY_FILE
-        repository: gcr.io/wercker-gke-demo/get_ip
+        repository: gcr.io/wrecker-demo2/get_ip
         registry: https://gcr.io/v2
 
 deploy-to-kubernetes:
